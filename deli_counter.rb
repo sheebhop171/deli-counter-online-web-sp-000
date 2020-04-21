@@ -7,7 +7,7 @@ def line(katz_deli)
 
   if katz_deli.empty?
     puts "The line is currently empty."
-  else katz_deli.each.with_index(1) do |name, index|
+  else katz_deli.each.with_index(1) do |index, name|
     customer1.push("#{index}. #{name}")
   end
     puts this_line + customer1.join(" ")
@@ -15,6 +15,6 @@ def line(katz_deli)
 end
 
 def take_a_number(katz_deli, name)
-
+  
   puts "Welcome, #{name}. You are number #{BLANK} in line."
 end
