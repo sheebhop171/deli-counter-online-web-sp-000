@@ -15,6 +15,7 @@ def line(katz_deli)
 end
 
 def take_a_number(katz_deli, name)
-  line_number = katz_deli.index(1)
+    katz_deli << name
+  line_number = katz_deli.last
   puts "Welcome, #{name}. You are number #{line_number} in line."
 end
