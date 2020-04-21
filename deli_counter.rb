@@ -8,5 +8,6 @@ def line(katz_deli)
   else katz_deli.each_with_index(1) do |name, index|
     customer1.push("#{index}. #{name}")
   end
+    puts this_line + customer1.join(" ")
   end
 end
